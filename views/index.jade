@@ -1,5 +1,9 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Handheld Demo
+  div(id='container')
+    div(id='placeholder') No handheld readings yet!
+    ul(id='handheld-list')
+  script(src="/socket.io/socket.io.js")
+  script(src="/javascripts/index.js")
